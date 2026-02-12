@@ -4505,3 +4505,26 @@ html {
     scroll-behavior: smooth;
 }
 
+   /* ------------------------------------------------------------------- 
+ * MODIFICHE AGGIUNTE
+ * STILE PAGINA MAGLIA.HTMLA
+ * ------------------------------------------------------------------- */
+    
+.back-home {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.back-home a {
+    text-decoration: none;
+    color: #111;
+    border-bottom: 1px solid #111;
+    padding-bottom: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.back-home a:hover {
+    opacity: 0.5;
+}    
