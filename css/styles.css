@@ -3843,13 +3843,21 @@ td:last-child {
     }
 }
 
+/* ------------------------------------------------------------------- 
+ * MODIFICHE COACH CUCCHIARA
+ * RESPONSABILE BARRA SOCIAL HOME SU SMARTPHONE
+ * ------------------------------------------------------------------- */
+    
 @media screen and (max-width: 600px) {
     .s-intro__content-text {
         max-width: 80vw;
     }
 
     .s-intro__social {
-        display: none;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin-top: 2rem;
     }
 
     .s-intro__scroll-down {
@@ -3860,6 +3868,11 @@ td:last-child {
         display: none;
     }
 }
+
+    /* ------------------------------------------------------------------- 
+ * MODIFICHE COACH CUCCHIARA
+ * FINE
+ * ------------------------------------------------------------------- */
 
 @media screen and (max-width: 400px) {
     .s-intro {
