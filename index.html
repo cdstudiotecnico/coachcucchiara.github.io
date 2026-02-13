@@ -624,7 +624,7 @@ GALLERY GARE (placeholder foto + descrizioni glightbox)
     };
 
     // Codice per lo scorrimento automatico e manuale delle immagini
- let currentIndex = 0;
+let currentIndex = 0;
 const gallery = document.querySelector('.folio-entries');  // Seleziona il contenitore della galleria
 const totalImages = document.querySelectorAll('.entry').length;  // Numero totale delle immagini
 
@@ -635,13 +635,13 @@ function showImage(index) {
 
 // Funzione per scorrere avanti
 function nextImage() {
-    currentIndex = (currentIndex + 1) % totalImages;
+    currentIndex = (currentIndex + 1) % totalImages;  // Incrementa l'indice e gestisci il loop
     showImage(currentIndex);
 }
 
 // Funzione per scorrere indietro
 function prevImage() {
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;  // Decrementa l'indice e gestisci il loop
     showImage(currentIndex);
 }
 
@@ -652,25 +652,9 @@ document.querySelector('.prev').addEventListener('click', prevImage);
 // Impostazione per lo scorrimento automatico ogni 3 secondi
 setInterval(nextImage, 3000);
 
-// Aggiungere il supporto per lo scorrimento touch
-let startX;
-gallery.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;  // Salviamo la posizione iniziale del tocco
-});
-
-gallery.addEventListener('touchend', (e) => {
-    const endX = e.changedTouches[0].clientX;  // Posizione finale del tocco
-    if (startX - endX > 50) {
-        // Se il movimento del tocco è abbastanza lungo a sinistra, scorrere avanti
-        nextImage();
-    } else if (endX - startX > 50) {
-        // Se il movimento del tocco è abbastanza lungo a destra, scorrere indietro
-        prevImage();
-    }
-});
-
 // Inizializza la visualizzazione
 showImage(currentIndex);
+
 
 </script>
 
@@ -710,3 +694,4 @@ showImage(currentIndex);
 </body>
 
 </html>
+
