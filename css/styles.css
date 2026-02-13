@@ -4538,32 +4538,31 @@ html {
 }
 
 /* ==================================================
-   GALLERIA MOBILE-FRIENDLY + SCORRIMENTO
+   GALLERIA COMPATTA (FUNZIONA SU TUTTI I DISPOSITIVI)
 ================================================== */
 
-/* Galleria desktop */
+/* Contenitore galleria */
 .s-works .folio-entries {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
+    padding: 20px;
+    overflow: hidden;
 }
 
-/* Galleria mobile: scorrimento orizzontale */
+/* Galleria per dispositivi mobile */
 @media screen and (max-width: 768px) {
     .s-works .folio-entries {
         display: flex;
-        overflow-x: scroll; /* Permette di scorrere le immagini */
-        gap: 10px;
-        padding: 10px 0;
+        flex-wrap: nowrap;
+        overflow-x: auto;
     }
 
     .s-works .entry {
         flex: 0 0 auto;
-        width: 80%; /* Immagini piccole per mobile */
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 80%; /* Immagini più piccole su mobile */
+        margin-right: 10px;
     }
 
     .entry__thumb img {
@@ -4572,30 +4571,28 @@ html {
         border-radius: 8px;
     }
 
-    /* Nascondo barra di scorrimento per migliorare l'aspetto */
+    /* Barra di scorrimento nascosta per mobile */
     .s-works .folio-entries::-webkit-scrollbar {
         height: 8px;
     }
 
     .s-works .folio-entries::-webkit-scrollbar-thumb {
-        background: rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
     }
 }
 
-/* Galleria desktop (larghezza normale per immagini maggiori) */
+/* Galleria per dispositivi desktop */
 @media screen and (min-width: 769px) {
     .s-works .folio-entries {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 3-4 immagini per riga su desktop */
+        gap: 15px;
     }
 
     .entry__thumb img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 }
-
