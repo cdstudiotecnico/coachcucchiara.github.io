@@ -706,25 +706,37 @@ PROSSIMA GARA (aggiornabile)
     </div> <!-- end page-wrap -->
 
 
-    <!-- Java Script
+<!-- Java Script
     ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
 <script>
+    // Per impedire la restaurazione automatica dello scroll alla ricarica della pagina
     if ('scrollRestoration' in history) {
         history.scrollRestoration = 'manual';
     }
 
+    // Scroll to top on load
     window.onload = function () {
         window.scrollTo(0, 0);
     };
+
+    // Scroll event per nascondere le icone social
+    window.addEventListener('scroll', function() {
+        var headerHeight = document.querySelector('header').offsetHeight;  // Altezza dell'header
+        var socialIcons = document.querySelector('.s-intro__social');  // Selettore per le icone social
+
+        // Controlla la posizione dello scroll e nasconde o mostra le icone
+        if (window.scrollY > headerHeight) {
+            socialIcons.classList.add('hidden');  // Aggiunge la classe per nascondere le icone
+        } else {
+            socialIcons.classList.remove('hidden');  // Rimuove la classe per farle riapparire
+        }
+    });
 </script>
 
 </body>
 
+
 </html>
-
-
-
-
