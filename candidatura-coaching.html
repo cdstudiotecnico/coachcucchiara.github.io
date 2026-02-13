@@ -212,13 +212,16 @@ Le informazioni raccolte sono indispensabili per costruire un programma personal
 
 <textarea id="dettagliAlimentari" name="dettagli_alimentari" placeholder="Descrivi eventuali problematiche alimentari" class="hidden"></textarea>
 
-<label>Disponibile a consegnare certificato medico agonistico?</label>
-<select name="certificato_medico" required>
-<option value="">Seleziona</option>
-<option value="Si">Si</option>
-<option value="No">No</option>
+<label>Disponibile a consegnare certificato medico agonistico in corso di validità?</label>
+<select id="certificatoMedico" name="certificato_medico" required>
+    <option value="">Seleziona</option>
+    <option value="Si">Si</option>
+    <option value="No">No</option>
 </select>
 
+<div id="avvisoCertificato" class="hidden" style="color:#c62828; font-size:14px; margin-top:10px;">
+    Mi dispiace, ma senza certificato medico non posso avviare un programma di allenamento.
+</div>
 </div>
 </div>
 
@@ -289,8 +292,30 @@ problemiAlimentari.addEventListener("change", function() {
     dettagliAlimentari.classList.toggle("hidden", this.value !== "Si");
 });
 
+const certificatoMedico = document.getElementById("certificatoMedico");
+const avvisoCertificato = document.getElementById("avvisoCertificato");
+const submitButton = document.querySelector("button");
+
+certificatoMedico.addEventListener("change", function() {
+    if (this.value === "No") {
+        avvisoCertificato.classList.remove("hidden");
+        submitButton.disabled = true;
+        submitButton.style.opacity = "0.5";
+        submitButton.style.cursor = "not-allowed";
+    } else {
+        avvisoCertificato.classList.add("hidden");
+        submitButton.disabled = false;
+        submitButton.style.opacity = "1";
+        submitButton.style.cursor = "pointer";
+    }
+});
+
 document.getElementById("coachingForm").addEventListener("submit", function(e) {
     e.preventDefault();
+
+    if (certificatoMedico.value !== "Si") {
+        return;
+    }
 
     if (!this.checkValidity()) {
         this.reportValidity();
