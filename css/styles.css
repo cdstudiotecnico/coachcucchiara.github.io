@@ -4182,7 +4182,7 @@ td:last-child {
   align-items   : center;
   font-family   : var(--font-1);  /* Mantieni il font esistente */
   font-weight   : 500;
-  font-size     : 2rem;  /* Riduci la dimensione del numero */
+  font-size     : 4rem;  /* Riduci la dimensione del numero */
   letter-spacing: -0.035em;
   line-height   : 1;
   color         : var(--color-3-dark);
