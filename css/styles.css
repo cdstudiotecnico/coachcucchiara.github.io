@@ -4539,18 +4539,21 @@ html {
     margin-top: 25px;
     text-align: center;
     font-size: 14px;
-    color: #ddd; /* testo più chiaro */
+    color: #cccccc; /* testo grigio chiaro elegante */
+    letter-spacing: 0.5px;
 }
 
 .coach-location a {
-    margin-left: 5px;
+    margin-left: 6px;
     text-decoration: none;
-    border-bottom: 1px solid #00c3ff; /* colore visibile */
-    color: #00c3ff; /* azzurro brillante */
+    color: #ffffff; /* bianco pieno */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     padding-bottom: 2px;
     transition: all 0.3s ease;
 }
 
 .coach-location a:hover {
-    opacity: 0.8;
+    border-bottom: 1px solid #ffffff;
+    opacity: 0.85;
 }
+
