@@ -4604,3 +4604,21 @@ button:hover {
     gap: 10px;
 }
 
+.folio-entries {
+    display: flex;                 /* Disposizione orizzontale delle immagini */
+    overflow: hidden;              /* Nasconde le immagini che vanno fuori dallo schermo */
+    width: 100%;                   /* La galleria occupa tutta la larghezza disponibile */
+    transition: transform 0.5s ease-in-out; /* Aggiunge una transizione fluida */
+}
+
+.column.entry {
+    flex: 0 0 100%;                /* Ogni immagine occupa il 100% della larghezza del contenitore */
+    max-width: 100%;
+    box-sizing: border-box;        /* Assicura che non ci siano problemi con il padding o il margine */
+}
+
+.entry__thumb img {
+    width: 100%;                   /* Le immagini occupano tutta la larghezza del contenitore */
+    height: auto;                  /* Mantiene il corretto rapporto di aspetto */
+    display: block;                /* Rimuove eventuali spazi vuoti sotto l'immagine */
+}
