@@ -4535,10 +4535,11 @@ html {
  * ------------------------------------------------------------------- */
 
 .coach-location {
-    margin-top: 40px;
-    font-size: 13px;
-    letter-spacing: 0.8px;
+    margin-top: 25px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
     color: rgba(255,255,255,0.5);
+    text-align: left;
 }
 
 .coach-location a {
@@ -4552,3 +4553,4 @@ html {
 .coach-location a:hover {
     border-bottom: 1px solid #ffffff;
 }
+
