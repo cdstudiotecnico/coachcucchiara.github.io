@@ -4178,14 +4178,15 @@ td:last-child {
 }
 
 .counter-items .num {
-    display       : inline-flex;
-    align-items   : center;
-    font-family   : var(--font-1);
-    font-weight   : 500;
-    font-size     : var(--text-huge-3);
-    letter-spacing: -0.035em;
-    line-height   : 1;
-    color         : var(--color-3-dark);
+  display       : inline-flex;
+  align-items   : center;
+  font-family   : var(--font-1);  /* Mantieni il font esistente */
+  font-weight   : 500;
+  font-size     : 2rem;  /* Riduci la dimensione del numero */
+  letter-spacing: -0.035em;
+  line-height   : 1;
+  color         : var(--color-3-dark);
+  margin-bottom : 10px;  /* Distanza tra il numero e il titolo */
 }
 
 .counter-items span {
