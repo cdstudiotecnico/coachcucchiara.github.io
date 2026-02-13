@@ -4528,3 +4528,29 @@ html {
 .back-home a:hover {
     opacity: 0.5;
 }    
+
+ /* ------------------------------------------------------------------- 
+ * MODIFICHE AGGIUNTE
+ * STILE PAGINA MAPS LOCALIZZAZIONE
+ * ------------------------------------------------------------------- */
+
+    
+.coach-location {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.coach-location a {
+    margin-left: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid #111;
+    color: #111;
+    padding-bottom: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.coach-location a:hover {
+    opacity: 0.6;
+}
