@@ -4464,7 +4464,7 @@ td:last-child {
     .logo {
     font-family: "Cormorant Garamond", serif;
     font-size: 34px;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 0.5px;
     text-decoration: none;
     color: #ffffff; /* metti nero se header chiaro */
@@ -4483,16 +4483,31 @@ td:last-child {
  * TASTI SOCIAL ANCHE SU SMARTPHONE
  * ------------------------------------------------------------------- */
 
-/* FORZA VISIBILITÀ SOCIAL SU MOBILE */
-@media screen and (max-width: 1024px) {
+/* FIX SOCIAL MOBILE - NO SOVRAPPOSIZIONE */
+@media screen and (max-width: 768px) {
+
     .s-intro__social {
+        position: static !important;   /* rimuove absolute */
+        bottom: auto !important;
+        right: auto !important;
+        left: auto !important;
+
         display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
+        justify-content: center;
+        margin-top: 20px;              /* spazio sotto il bottone */
+        gap: 18px;                     /* distanza tra icone */
     }
 
     .s-intro__social li {
-        display: inline-block !important;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .s-intro__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
