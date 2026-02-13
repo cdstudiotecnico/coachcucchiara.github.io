@@ -4607,9 +4607,10 @@ html {
 
 
 
-    /* Mobile - Sposta il bottone "La Maglia del Team" più in alto */
+/* Mobile - Sposta il bottone "La Maglia del Team" più in alto */
 @media (max-width: 768px) {
   .s-intro__btn-download {
-    margin-top: -40px; /* Sposta il bottone più in alto */
+    position: relative; /* Aggiungi posizione relativa */
+    margin-top: -20px;  /* Sposta il bottone più in alto */
   }
 }
