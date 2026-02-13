@@ -4534,26 +4534,21 @@ html {
  * STILE PAGINA MAPS LOCALIZZAZIONE
  * ------------------------------------------------------------------- */
 
-    
 .coach-location {
-    margin-top: 25px;
-    text-align: center;
-    font-size: 14px;
-    color: #cccccc; /* testo grigio chiaro elegante */
-    letter-spacing: 0.5px;
+    margin-top: 40px;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    color: rgba(255,255,255,0.5);
 }
 
 .coach-location a {
-    margin-left: 6px;
+    color: #ffffff;
     text-decoration: none;
-    color: #ffffff; /* bianco pieno */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
     padding-bottom: 2px;
     transition: all 0.3s ease;
 }
 
 .coach-location a:hover {
     border-bottom: 1px solid #ffffff;
-    opacity: 0.85;
 }
-
