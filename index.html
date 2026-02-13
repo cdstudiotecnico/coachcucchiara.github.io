@@ -382,116 +382,126 @@ GALLERY GARE (placeholder foto + descrizioni glightbox)
         </div>
     </div>
 
-    <div class="row folio-entries">
+    <!-- Carosello delle immagini -->
+    <div class="glide" id="carousel">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <!-- Lisbona -->
+                <li class="glide__slide">
+                    <a href="images/gare/Lisbona.jpg" class="entry__link glightbox" data-glightbox="title: Lisbona 2025; description: .desc-lisbona">
+                        <div class="entry__thumb">
+                            <img src="images/gare/Lisbona.jpg" alt="Lisbona 2025" class="img-responsive">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Lisbona</h4>
+                            <div class="entry__cat">Half Marathon</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc desc-lisbona">
+                        Mezza Maratona di Lisbona 2025.  
+                        1h13'04". Primo Italiano. Top 40 assoluti su oltre 20.000 partecipanti.
+                    </div>
+                </li>
 
-        <!-- FOTO: Lisbona -->
-        <div class="column entry">
-            <a href="images/gare/Lisbona.jpg" class="entry__link glightbox"
-               data-glightbox="title: Lisbona 2025; description: .desc-lisbona">
-                <div class="entry__thumb">
-                    <img src="images/gare/Lisbona.jpg" alt="Lisbona 2025">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Lisbona</h4>
-                    <div class="entry__cat">Half Marathon</div>
-                </div>
-            </a>
-            <div class="glightbox-desc desc-lisbona">
-                Mezza Maratona di Lisbona 2025.  
-                1h13'04". Primo Italiano. Top 40 assoluti su oltre 20.000 partecipanti.
-            </div>
+                <!-- Aggiungi le altre immagini seguendo lo stesso formato -->
+                <li class="glide__slide">
+                    <a href="images/gare/pista.jpg" class="entry__link glightbox" data-glightbox="title: Pista; description: .desc-pista">
+                        <div class="entry__thumb">
+                            <img src="images/gare/pista.jpg" alt="Pista" class="img-responsive">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Pista</h4>
+                            <div class="entry__cat">Velocità e Tecnica</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc desc-pista">
+                        Gare di velocità, dove ogni frazione di secondo conta.
+                    </div>
+                </li>
+
+                <li class="glide__slide">
+                    <a href="images/gare/Europei1.JPG" class="entry__link glightbox" data-glightbox="title: Europei 1; description: .desc-europei1">
+                        <div class="entry__thumb">
+                            <img src="images/gare/Europei1.JPG" alt="Europei 1" class="img-responsive">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Europei 1</h4>
+                            <div class="entry__cat">Campionati Europei</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc desc-europei1">
+                        L'emozione di gareggiare nei campionati europei.
+                    </div>
+                </li>
+
+                <li class="glide__slide">
+                    <a href="images/gare/mioallenatoretommaso.jpg" class="entry__link glightbox" data-glightbox="title: Mio allenatore Tommaso; description: .desc-tommaso">
+                        <div class="entry__thumb">
+                            <img src="images/gare/mioallenatoretommaso.jpg" alt="Mio allenatore Tommaso" class="img-responsive">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Mio allenatore Tommaso</h4>
+                            <div class="entry__cat">Mentore e Guida</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc desc-tommaso">
+                        Il mio allenatore Tommaso, sempre un passo avanti.
+                    </div>
+                </li>
+
+                <!-- Continuare con tutte le immagini successive -->
+                <li class="glide__slide">
+                    <a href="images/gare/miopadre.jpg" class="entry__link glightbox" data-glightbox="title: Mio padre; description: .desc-mio-padre">
+                        <div class="entry__thumb">
+                            <img src="images/gare/miopadre.jpg" alt="Mio padre" class="img-responsive">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Mio padre</h4>
+                            <div class="entry__cat">Ispirazione</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc desc-mio-padre">
+                        L'influenza di mio padre nella mia crescita sportiva.
+                    </div>
+                </li>
+
+                <!-- Altre foto -->
+                <li class="glide__slide">
+                    <a href="images/gare/Europei2.JPG" class="entry__link glightbox" data-glightbox="title: Europei 2; description: .desc-europei2">
+                        <div class="entry__thumb">
+                            <img src="images/gare/Europei2.JPG" alt="Europei 2" class="img-responsive">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Europei 2</h4>
+                            <div class="entry__cat">Championship</div>
+                        </div>
+                    </a>
+                    <div class="glightbox-desc desc-europei2">
+                        Gare di livello europeo, una sfida unica.
+                    </div>
+                </li>
+
+                <!-- Aggiungere il resto delle immagini e dei video -->
+                <!-- Video -->
+                <li class="glide__slide">
+                    <video width="100%" controls class="responsive-video">
+                        <source src="videos/videonapoli1.mp4" type="video/mp4">
+                    </video>
+                </li>
+
+                <li class="glide__slide">
+                    <video width="100%" controls class="responsive-video">
+                        <source src="videos/videonapoli2.mp4" type="video/mp4">
+                    </video>
+                </li>
+            </ul>
         </div>
 
-        <!-- FOTO: Copenaghen -->
-        <div class="column entry">
-            <a href="images/gare/copenaghen1.JPG" class="entry__link glightbox"
-               data-glightbox="title: Copenaghen; description: .desc-copenaghen">
-                <div class="entry__thumb">
-                    <img src="images/gare/copenaghen1.JPG" alt="Copenaghen">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Copenaghen</h4>
-                    <div class="entry__cat">SuperHalfs</div>
-                </div>
-            </a>
-            <div class="glightbox-desc desc-copenaghen">
-                Copenhagen Half Marathon.  
-                Un passo europeo, fatto di ritmo e disciplina.
-            </div>
+        <!-- Controlli carosello -->
+        <div data-glide-el="controls" class="glide__controls">
+            <button data-glide-dir="<" class="glide__arrow glide__arrow--left">‹</button>
+            <button data-glide-dir=">" class="glide__arrow glide__arrow--right">›</button>
         </div>
-
-        <!-- FOTO: Praga -->
-        <div class="column entry">
-            <a href="images/gare/Praga1.JPG" class="entry__link glightbox"
-               data-glightbox="title: Praga; description: .desc-praga">
-                <div class="entry__thumb">
-                    <img src="images/gare/Praga1.JPG" alt="Praga">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Praga</h4>
-                    <div class="entry__cat">SuperHalfs</div>
-                </div>
-            </a>
-            <div class="glightbox-desc desc-praga">
-                Prague Half Marathon.  
-                Silenzio, ascolto, controllo del passo.
-            </div>
-        </div>
-
-        <!-- FOTO: Valencia -->
-        <div class="column entry">
-            <a href="images/gare/Valencia.jpg" class="entry__link glightbox"
-               data-glightbox="title: Valencia; description: .desc-valencia">
-                <div class="entry__thumb">
-                    <img src="images/gare/Valencia.jpg" alt="Valencia">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Valencia</h4>
-                    <div class="entry__cat">Half Marathon</div>
-                </div>
-            </a>
-            <div class="glightbox-desc desc-valencia">
-                Valencia Half Marathon.  
-                Una delle mezze più veloci d’Europa: qui conta ogni dettaglio.
-            </div>
-        </div>
-
-        <!-- FOTO: Napoli -->
-        <div class="column entry">
-            <a href="images/gare/Napoli1.jpg" class="entry__link glightbox"
-               data-glightbox="title: Napoli; description: .desc-napoli">
-                <div class="entry__thumb">
-                    <img src="images/gare/Napoli1.jpg" alt="Napoli">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Napoli</h4>
-                    <div class="entry__cat">Half Marathon</div>
-                </div>
-            </a>
-            <div class="glightbox-desc desc-napoli">
-                Napoli Half Marathon.  
-                Energia, emozione, e una città che ti fa correre con il cuore.
-            </div>
-        </div>
-
-        <!-- FOTO: Bagheria (10 km) -->
-        <div class="column entry">
-            <a href="images/gare/Bagheria.jpg" class="entry__link glightbox"
-               data-glightbox="title: Bagheria 10 km; description: .desc-bagheria">
-                <div class="entry__thumb">
-                    <img src="images/gare/Bagheria.jpg" alt="Bagheria 10 km">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Bagheria</h4>
-                    <div class="entry__cat">10 km su strada</div>
-                </div>
-            </a>
-            <div class="glightbox-desc desc-bagheria">
-                10 km su strada.  
-                Ritmo, precisione, controllo: pochi secondi possono cambiare tutto.
-            </div>
-        </div>
-
     </div>
 
 </section>
@@ -513,142 +523,33 @@ AURORA
             </p>
 
             <p>
-                Aurora è mia figlia.
-                Ha quattro anni.
-                Non conosce i cronometri.
-                Non conosce i tempi.
-                Non conosce le classifiche.
-            </p>
-
-            <p>
-                Ma vede.
-                Osserva.
-                Assorbe.
-            </p>
-
-            <p>
-                Vede un padre che si allena la sera,
-                dopo il lavoro,
-                dopo cena,
-                quando sarebbe più semplice fermarsi.
-            </p>
-
-            <p>
-                Vede disciplina.
-                Vede costanza.
-                Vede silenzio.
-            </p>
-
-            <p>
-                Non corro per dimostrare qualcosa agli altri.
-                Corro per essere un esempio.
-                Per trasmettere che nella vita
-                nulla arriva per caso.
-            </p>
-
-            <p>
-                Viviamo in un tempo che spinge alla sedentarietà,
-                alla comodità,
-                alla distrazione continua.
-                Io voglio che lei cresca sapendo
-                che il corpo va rispettato,
-                allenato,
-                costruito.
-            </p>
-
-            <p>
-                Silence. Run.
-                È questo.
-                Essere soli con se stessi.
-                Ascoltare il cuore.
-                Migliorarsi.
-                E poi tornare a casa
-                più presenti,
-                più lucidi,
-                più forti.
-            </p>
-
-            <p>
-                Se un giorno mi chiederà perché corro,
-                la risposta sarà semplice:
-                per insegnarti che puoi fare molto più
-                di quanto immagini.
+                Aurora è mia figlia. Ha quattro anni...
             </p>
 
         </div>
     </div>
 
-    <!-- FOTO CON AURORA -->
     <div class="row folio-entries">
-
+        <!-- Immagini con Aurora -->
         <div class="column entry">
-            <a href="images/famiglia/copenaghen-aurora.jpg" class="entry__link glightbox"
-               data-glightbox="title: Copenaghen; description: .desc-aurora1">
+            <a href="images/famiglia/cross-aurora.jpg" class="entry__link glightbox" data-glightbox="title: Cross con Aurora; description: .desc-aurora-cross">
                 <div class="entry__thumb">
-                    <img src="images/famiglia/copenaghen-aurora.jpg" alt="">
+                    <img src="images/famiglia/cross-aurora.jpg" alt="Cross con Aurora" class="img-responsive">
                 </div>
                 <div class="entry__info">
-                    <h4 class="entry__title">Copenaghen</h4>
+                    <h4 class="entry__title">Cross con Aurora</h4>
                     <div class="entry__cat">Famiglia & Disciplina</div>
                 </div>
             </a>
-            <div class="glightbox-desc desc-aurora1">
+            <div class="glightbox-desc desc-aurora-cross">
                 Ogni traguardo condiviso vale il doppio.
             </div>
         </div>
 
-        <div class="column entry">
-            <a href="images/famiglia/praga-aurora.jpg" class="entry__link glightbox"
-               data-glightbox="title: Praga; description: .desc-aurora2">
-                <div class="entry__thumb">
-                    <img src="images/famiglia/praga-aurora.jpg" alt="">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Praga</h4>
-                    <div class="entry__cat">Cuore & Futuro</div>
-                </div>
-            </a>
-            <div class="glightbox-desc desc-aurora2">
-                Il tempo passa. L’esempio resta.
-            </div>
-        </div>
-
-        <div class="column entry">
-            <a href="images/famiglia/napoli-aurora.jpg" class="entry__link glightbox"
-               data-glightbox="title: Napoli; description: .desc-aurora3">
-                <div class="entry__thumb">
-                    <img src="images/famiglia/napoli-aurora.jpg" alt="">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Napoli</h4>
-                    <div class="entry__cat">Silence. Run.</div>
-                </div>
-            </a>
-            <div class="glightbox-desc desc-aurora3">
-                Correre è personale. L’amore è universale.
-            </div>
-        </div>
-
-    </div>
-
-    <!-- VIDEO NAPOLI -->
-    <div class="row" style="margin-top: 40px;">
-        <div class="column xl-12">
-
-            <h3 style="margin-bottom: 18px;">Napoli — Emozione Vera</h3>
-
-            <video width="100%" controls style="margin-bottom: 20px;">
-                <source src="videos/videonapoli1.mp4" type="video/mp4">
-            </video>
-
-            <video width="100%" controls>
-                <source src="videos/videonapoli2.mp4" type="video/mp4">
-            </video>
-
-        </div>
     </div>
 
 </section>
+
 
 <!-- ==================================================
 PROSSIMA GARA (aggiornabile)
@@ -881,4 +782,5 @@ PROSSIMA GARA (aggiornabile)
 </body>
 
 </html>
+
 
