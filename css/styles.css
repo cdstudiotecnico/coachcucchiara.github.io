@@ -4599,4 +4599,24 @@ html {
     background-color: rgba(0, 0, 0, 0.8); /* Cambio colore quando si passa sopra */
 }
 
+.smoothscroll {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px; /* Imposta il padding per il bottone */
+  font-size: 1.1rem; /* Imposta la dimensione del font */
+  text-decoration: none;
+  color: #356c6c;
+  border: 2px solid #356c6c; /* Colore del bordo */
+  border-radius: 30px; /* Bordi arrotondati */
+  text-transform: uppercase; /* Per il testo in maiuscolo */
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.smoothscroll:hover {
+  background-color: #356c6c;
+  color: #fff; /* Colore del testo al passaggio del mouse */
+  border-color: #2a5656; /* Colore del bordo al passaggio del mouse */
+}
 
