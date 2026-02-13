@@ -4840,3 +4840,10 @@ button {
         object-fit: cover;       /* Mantieni l'immagine centrata senza distorsioni */
     }
 }
+
+    .entry__thumb img {
+    width: 100%;
+    height: auto;
+    border: 2px solid red;  /* Aggiungi un bordo rosso per visualizzare chiaramente le immagini */
+    display: block;
+}
