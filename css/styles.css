@@ -4715,3 +4715,66 @@ html {
     display: block;
 }
 
+    /* Contenitore della galleria: usa Flexbox per disporre le immagini orizzontalmente */
+.folio-entries {
+    display: flex;
+    flex-wrap: nowrap;  /* Non fa andare le immagini a capo */
+    overflow: hidden;   /* Nasconde le immagini che escono dal contenitore */
+    width: 100%;        /* La galleria occupa tutta la larghezza disponibile */
+    position: relative; /* Necessario per le frecce di navigazione */
+}
+
+/* Ogni immagine deve occupare il 100% della larghezza del contenitore */
+.column.entry {
+    flex: 0 0 100%; /* Ogni immagine occupa il 100% dello spazio disponibile */
+    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
+    box-sizing: border-box; /* Assicura che il padding/margine non aumentino la larghezza */
+}
+
+/* Le immagini all'interno della galleria */
+.entry__thumb img {
+    width: 100%;      /* Ogni immagine occupa il 100% della larghezza del suo contenitore */
+    height: auto;     /* Mantiene il corretto rapporto di aspetto */
+    display: block;   /* Rimuove eventuali spazi vuoti sotto l'immagine */
+}
+
+/* Frecce per la navigazione */
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo semitrasparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 100;
+    border-radius: 50%; /* Le frecce sono rotonde */
+    opacity: 0;  /* Le frecce sono invisibili di default */
+    transition: opacity 0.3s ease-in-out; /* Transizione per mostrare le frecce */
+}
+
+/* Frecce visibili al passaggio del mouse */
+.folio-entries:hover button {
+    opacity: 1; /* Le frecce diventano visibili quando l'utente passa sopra la galleria */
+}
+
+/* Freccia precedente */
+.prev {
+    left: 10px;
+}
+
+/* Freccia successiva */
+.next {
+    right: 10px;
+}
+
+/* Modifiche per schermi piccoli */
+@media screen and (max-width: 768px) {
+    .entry__thumb img {
+        height: 200px; /* Riduce l'altezza delle immagini sui dispositivi mobili */
+        object-fit: cover; /* Assicura che l'immagine si adatti senza distorsioni */
+    }
+}
+
