@@ -4847,3 +4847,28 @@ button {
     border: 2px solid red;  /* Aggiungi un bordo rosso per visualizzare chiaramente le immagini */
     display: block;
 }
+
+
+    /* Centra la riga (contenitore del tasto) */
+.center-btn {
+    display: flex;                /* Usa flexbox per il layout */
+    justify-content: center;      /* Centra il contenuto orizzontalmente */
+    align-items: center;          /* Centra verticalmente, se necessario */
+    margin-top: 20px;             /* Distanza dal contenuto superiore */
+}
+
+/* Stile per il tasto "Vai alla Galleria" */
+.center-btn .btn {
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Cambio colore del tasto al passaggio del mouse */
+.center-btn .btn:hover {
+    background-color: #555;
+}
