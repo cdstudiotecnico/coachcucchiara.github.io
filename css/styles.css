@@ -4606,9 +4606,11 @@ html {
   justify-content: center;
 }
 
-..s-intro__subtitle {
-    color: rgba(255,255,255,0.85);
+.s-intro__subtitle {
+    color: #ffffff;
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    opacity: 0.9;
 }
